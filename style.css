@@ -96,6 +96,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    position: relative;
  }
 form label {
     font-size: .75rem;
@@ -129,7 +130,25 @@ form input::placeholder {
  form input[type="submit"]:hover {
     cursor: pointer;
  }
-
+ #error-message {
+    position: absolute;
+    color: red;
+    font-size: .75rem;
+    font-weight: 700;
+    right: 0;
+ }
+ .invisible {
+    display: none;
+ }
+ .input-error {
+    border-color: red;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.2);
+ }
+ .input-error::placeholder {
+    color: red;
+ }
+ 
  @media screen and (max-width: 850px) {
     .attribution {
         position: relative;

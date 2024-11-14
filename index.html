@@ -30,10 +30,11 @@
           <li><span>Measuring to ensure updates are a success</span></li>
           <li><span>And much more!</span></li>
         </ul>
-          <form novalidate>
+          <form id="signupForm" novalidate>
             <label for="email">Email address</label>
-            <input placeholder="email@company.com" id="email" type="email" required>
+            <input autofocus placeholder="email@company.com" id="email" type="email" required>
             <input type="submit" value="Subscribe to monthly newsletter">
+            <span id="error-message" class="invisible">Valid email required</span>
           </form>
       </div>
       <div class="rightSide">
@@ -41,7 +42,6 @@
           <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 850px)">
           <img src="./assets/images/illustration-sign-up-desktop.svg" alt="signup illustration">
         </picture>
-        
       </div>
     </div>
   </main>
