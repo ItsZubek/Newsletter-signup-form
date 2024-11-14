@@ -21,7 +21,7 @@
 </head>
 <body>
   <main>
-    <div class="signupForm">
+    <div id="signupForm">
       <div class="leftSide">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -30,7 +30,7 @@
           <li><span>Measuring to ensure updates are a success</span></li>
           <li><span>And much more!</span></li>
         </ul>
-          <form id="signupForm" novalidate>
+          <form id="formComponent" novalidate>
             <label for="email">Email address</label>
             <input autofocus placeholder="email@company.com" id="email" type="email" required>
             <input type="submit" value="Subscribe to monthly newsletter">
@@ -44,17 +44,14 @@
         </picture>
       </div>
     </div>
+    <div id="successMessage" class="invisible">
+      <img class="successImg" src="./assets/images/icon-success.svg" alt="success icon">
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <span id="successMail">ash@loremcompany.com</span>. 
+      Please open it and click the button inside to confirm your subscription.</p>
+      <button id="dismissBtn">Dismiss message</button>
+    </div>
   </main>
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
